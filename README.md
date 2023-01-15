@@ -57,6 +57,13 @@ a passo de como clonar e rodar localmente!
 
 - Comece realizando o clone do repositório `git clone https://github.com/dscostat7/telzir_LOL`
 - Copie o arquivo `.env.example`, que se encontra no diretório `/src`, e cole em `src\.env`
+- Adicionar no arquivo `.env` as seguintes linhas de acesso ao DB:
+	<p>DB_CONNECTION=mysql</p>
+	<p>DB_HOST=mysql</p>
+	<p>DB_PORT=3306</p>
+	<p>DB_DATABASE=lol</p>
+	<p>DB_USERNAME=root</p>
+	<p>DB_PASSWORD=123.456</p>
 - Instalando e atualizando as depencias `docker-compose up -d` (lembre-se de verificar se já não há processos que utilizam as portas dos containers)
 - Feito todo o processo com sucesso, acesse em seu navegador `localhost` e terá acesso à aplicação
 
