@@ -48,10 +48,10 @@ a passo de como clonar e rodar localmente!
 - Bootstrap
 - MySQL
 
-## 🚧 Módulos instalados e comandos utilizados
+## 🚧 Comandos utilizados
 
-- Breadcumb,com o comando `composer require 'drupal/easy_breadcrumb:^2.0'`
-- Gerando tema padrão `php core/scripts/drupal generate-theme movies`
+- Após a criação do ambiente `Docker`, foi utilizado o comando:
+- `composer create-project laravel/laravel src`, para criar a aplicação dentro do diretório `src`
 
 ## 💻 Passo a passo para rodar local
 
