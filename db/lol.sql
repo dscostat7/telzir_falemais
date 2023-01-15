@@ -24,7 +24,7 @@ CREATE TABLE `rate` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `rate_cod_unique` (`cod_orig`)
+  UNIQUE KEY `rate_cod_unique` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `rate` WRITE;
@@ -34,9 +34,9 @@ INSERT INTO `rate` (`id`, `cod_orig`, `name_orig`, `cod_dest`, `name_dest`, `pri
 VALUES
  (1, 011, 'São Paulo', 016, 'São Paulo', 1.9),
  (2, 016, 'São Paulo', 011, 'São Paulo', 2.9),
- (3, 011, 'São Paulo', 017, 'São Paulo', 1.7);
- (4, 017, 'São Paulo', 011, 'São Paulo', 2.7);
- (5, 011, 'São Paulo', 018, 'São Paulo', 0.9);
+ (3, 011, 'São Paulo', 017, 'São Paulo', 1.7),
+ (4, 017, 'São Paulo', 011, 'São Paulo', 2.7),
+ (5, 011, 'São Paulo', 018, 'São Paulo', 0.9),
  (6, 018, 'São Paulo', 011, 'São Paulo', 1.9);
 
 /*!40000 ALTER TABLE `rate` ENABLE KEYS */;
